@@ -11,6 +11,9 @@
       <module name="lecture6" target="21" />
       <module name="lecture6.main" target="21" />
       <module name="lecture6.test" target="21" />
+      <module name="lecture7" target="21" />
+      <module name="lecture7.main" target="21" />
+      <module name="lecture7.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
