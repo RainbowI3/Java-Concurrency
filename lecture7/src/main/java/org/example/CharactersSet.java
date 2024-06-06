@@ -8,4 +8,5 @@ public interface CharactersSet<T> {
     CharactersSet<T> difference(CharactersSet<T> other);
     Set<T>getCharacters();
 
+    T[] getCharactersArray();
 }

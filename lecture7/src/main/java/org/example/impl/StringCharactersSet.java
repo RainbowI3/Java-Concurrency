@@ -42,18 +42,28 @@ public  class StringCharactersSet implements CharactersSet<String> {
 
     @Override
     public StringCharactersSet union(CharactersSet<String> other) {
+        //TODO implement
         return null;
     }
 
     @Override
     public StringCharactersSet difference(CharactersSet<String> other) {
 
-        return null;
+        Set<String> newContent = getCharacters();
+        newContent.removeAll(other.getCharacters());
+
+
+        return  new StringCharactersSet(newContent);
     }
 
     @Override
    public Set<String> getCharacters(){
        return new HashSet<>(content);
        // return content;
+    }
+
+    @Override
+    public String[] getCharactersArray() {
+       return content.toArray(String[]::new);
     }
 }
