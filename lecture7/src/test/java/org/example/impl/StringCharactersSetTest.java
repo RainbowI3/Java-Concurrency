@@ -17,4 +17,13 @@ class StringCharactersSetTest {
     assertThat(set1.intersect(set2).getCharacters()).isEqualTo(Set.of("a","b","c"));
     assertThat(set2.intersect(set1).getCharacters()).isEqualTo(Set.of("a","b","c"));
 }
+@Test
+    public void getCharacters(){
+    StringCharactersSet set  = StringCharactersSet.fromArray("a","b");
+    Set<String> characters = set.getCharacters();
+    characters.add("c");
+
+    assertThat(set.getCharacters()).containsExactlyInAnyOrder("a","b");
+
+}
 }

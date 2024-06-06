@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public  class StringCharactersSet implements CharactersSet {
+public  class StringCharactersSet implements CharactersSet<String> {
     private final Set<String> content;
 
 
@@ -30,33 +30,30 @@ public  class StringCharactersSet implements CharactersSet {
     }
 
     @Override
-    public StringCharactersSet intersect(CharactersSet other) {
-        if(other instanceof StringCharactersSet){
-            StringCharactersSet otherStringCharactersSet = (StringCharactersSet) other;
+    public StringCharactersSet intersect(CharactersSet<String> other) {
 
             Set<String> newContent = getCharacters();
-            newContent.retainAll(otherStringCharactersSet.getCharacters());
+            newContent.retainAll(other.getCharacters());
 
 
             return  new StringCharactersSet(newContent);
         }
 
-        return null;
-
-
-    }
 
     @Override
-    public StringCharactersSet union(CharactersSet other) {
+    public StringCharactersSet union(CharactersSet<String> other) {
         return null;
     }
 
     @Override
-    public StringCharactersSet difference(CharactersSet other) {
+    public StringCharactersSet difference(CharactersSet<String> other) {
 
         return null;
     }
 
-   public Set<String> getCharacters(){return new HashSet<>(content);
+    @Override
+   public Set<String> getCharacters(){
+       return new HashSet<>(content);
+       // return content;
     }
 }
