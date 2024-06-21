@@ -8,11 +8,14 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.32/17d46b3e205515e1e8efd3ee4d57ce8018914163/lombok-1.18.32.jar" />
         </processorPath>
-        <module name="lecture7.main" />
-        <module name="lecture7.test" />
+        <module name="lecture8.main" />
+        <module name="lecture8.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="coffe_shop" target="21" />
+      <module name="coffe_shop.main" target="21" />
+      <module name="coffe_shop.test" target="21" />
       <module name="lecture5" target="21" />
       <module name="lecture5.main" target="21" />
       <module name="lecture5.test" target="21" />
@@ -22,6 +25,9 @@
       <module name="lecture7" target="21" />
       <module name="lecture7.main" target="21" />
       <module name="lecture7.test" target="21" />
+      <module name="lecture8" target="21" />
+      <module name="lecture8.main" target="21" />
+      <module name="lecture8.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
