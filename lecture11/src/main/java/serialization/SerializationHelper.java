@@ -1,4 +1,4 @@
-package org.example.serialization;
+package serialization;
 
 import java.io.*;
 
