@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/lecture12.iml" filepath="$PROJECT_DIR$/lecture12.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture12.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture12.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture12.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture12.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lecture13.iml" filepath="$PROJECT_DIR$/lecture13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture13.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture13.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture13.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture13.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture2/lecture2/lecture2.iml" filepath="$PROJECT_DIR$/lecture2/lecture2/lecture2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture3/lecture3.iml" filepath="$PROJECT_DIR$/lecture3/lecture3.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture5.iml" filepath="$PROJECT_DIR$/lecture5.iml" />
