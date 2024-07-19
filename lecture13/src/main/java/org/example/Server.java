@@ -1,8 +1,6 @@
 package org.example;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.TimeUnit;
@@ -25,8 +23,18 @@ public class Server {
                   int num = in.readInt();
                   System.out.println("Received a string '" + s + "' and a number " + num + " from the client");
 
-//                System.out.println("Close client socket");
-//                socket.close();
+
+                  StringBuilder sb = new StringBuilder(s.length() * num);
+                   for(int i = 0; i < num;i++){
+                      sb.append(s);
+                   }
+
+                  System.out.println("Sending back a string to the client: " + sb);
+                  BufferedOutputStream os =new BufferedOutputStream(socket.getOutputStream());
+                   os.write(sb.toString().getBytes());
+                   os.flush();
+                   System.out.println("All data is sent");
+                   socket.close();
 
               } catch (IOException e) {
                   System.out.println("Exception occurred while exchanging tha data with client:" + e.getMessage());

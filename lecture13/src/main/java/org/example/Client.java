@@ -1,8 +1,6 @@
 package org.example;
 
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -35,6 +33,13 @@ public class Client {
 //            ps.flush();
             dos.writeUTF("Some command");
             dos.writeInt(5);
+
+            BufferedInputStream is = new BufferedInputStream(socket.getInputStream());
+
+            System.out.println("Reading data from the the server ");
+            String obtainedString = new String(is.readAllBytes());
+            System.out.println("Obtained from the server:  "  + obtainedString);
+
         } catch (IOException e) {
             System.err.println("Failed to send data to the server");
         }
