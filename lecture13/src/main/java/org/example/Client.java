@@ -26,13 +26,17 @@ public class Client {
 
         try {
 //            PrintStream ps = new PrintStream(socket.getOutputStream());
-            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
-            System.out.println("Sending data to the server ");
-            //ps.println("Some command");
-//            ps.print(5);
-//            ps.flush();
-            dos.writeUTF("Some command");
-            dos.writeInt(5);
+//            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+//            System.out.println("Sending data to the server ");
+//            //ps.println("Some command");
+////            ps.print(5);
+////            ps.flush();
+//            dos.writeUTF("Some command");
+//            dos.writeInt(5);
+
+          ClientToServer data =  new ClientToServer("Some command",5);
+         ObjectOutputStream os = new ObjectOutputStream(socket.getOutputStream());
+         os.writeObject(data);
 
             BufferedInputStream is = new BufferedInputStream(socket.getInputStream());
 
