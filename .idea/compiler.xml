@@ -20,6 +20,9 @@
       <module name="lecture13" target="21" />
       <module name="lecture13.main" target="21" />
       <module name="lecture13.test" target="21" />
+      <module name="lecture14" target="21" />
+      <module name="lecture14.main" target="21" />
+      <module name="lecture14.test" target="21" />
       <module name="lecture5" target="21" />
       <module name="lecture5.main" target="21" />
       <module name="lecture5.test" target="21" />
